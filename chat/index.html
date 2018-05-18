@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>chat</title>
+		<style>
+			body{
+				height: 2000px;
+			}
+
+			#chat-icon{
+				position:fixed;
+				margin-left: 92%;
+				margin-top: 43%;
+			}
+
+			#chat-box{
+				position:fixed;
+				border: 3px solid #a0a0d6;
+				width: 250px;
+				height: 350px;
+				margin-left: 80%;
+				margin-top: 22%;
+				display: none;
+				border-radius:4px;
+			}
+			.optionBar{
+				text-align:right;
+				height:20px;
+			}
+			.optionBar a{
+				margin-right: 7px;
+				font-size:20px;
+				padding: 0px;
+				text-decoration: none;
+			}
+
+			.messageBox{
+				height:275px;
+			}
+
+			.inputBox{
+				height:51px;
+				width:100%;
+			}
+			.inputBox textarea{
+				width:97.5%;
+				height: 50px;
+				resize:none;
+			}
+		</style>
+</head>
+<body>
+		<div id="chat-box">
+				<div class="optionBar">
+						<a onclick="hideBox()" href="#">x</a>
+				</div>
+				<div class="messageBox">
+				</div>
+				<div class="inputBox">
+						<textarea id="" width="100%"></textarea>
+				</div>
+		</div>
+		<a onclick="hideIcon()" href="#"><img id="chat-icon" src="conversation.png"></a>
+
+</body>
+<script src="script.js"></script>
+</html>
