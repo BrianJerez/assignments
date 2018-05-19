@@ -36,12 +36,17 @@
 			}
 
 			.messageBox{
-				height:275px;
+				padding-left: 1px;
+				height:78%;
+				width: 99%;
+				overflow-y: scroll;
+				position:absolute;
 			}
 
 			.inputBox{
 				height:51px;
 				width:100%;
+				margin-top:110%
 			}
 			.inputBox textarea{
 				width:97.5%;
@@ -56,13 +61,18 @@
 						<a onclick="hideBox()" href="#">x</a>
 				</div>
 				<div class="messageBox">
+
 				</div>
 				<div class="inputBox">
-						<textarea id="" width="100%"></textarea>
+						<textarea id="area-box" width="100%"></textarea>
 				</div>
 		</div>
 		<a onclick="hideIcon()" href="#"><img id="chat-icon" src="conversation.png"></a>
 
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </html>
